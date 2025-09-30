@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from queue import Queue
 from threading import Lock, Thread
 
-import stopit
+import stopit2
 
 from pypeln import utils as pypeln_utils
 from pypeln.utils import Kwargs, T
@@ -108,7 +108,7 @@ class ApplyProcess(ProcessFn, Applicable):
     def __call__(self, worker: Stage, **kwargs):
         for x in worker.iter_dependencies():
             with (
-                stopit.ThreadingTimeout(worker.timeout)
+                stopit2.ThreadingTimeout(worker.timeout)
                 if worker.timeout
                 else utils.NoOpContext()
             ):

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pypeln"
-version = "0.4.9"
+version = "0.4.9+stopitpatch1"
 description = ""
 authors = ["Cristian Garcia <cgarcia.e88@gmail.com>"]
 license = "MIT"
@@ -9,9 +9,9 @@ repository = "https://github.com/cgarciae/pypeln"
 homepage = "https://cgarciae.github.io/pypeln"
 
 [tool.poetry.dependencies]
-python = ">=3.7,<4.0"
-stopit = ">=1.1.2"
+python = ">=3.9,<4.0"
 typing_extensions = ">=3.7.4"
+stopit2 = "^1.1.2"
 
 [tool.poetry.group.test.dependencies]
 pytest = ">=5.3.5"

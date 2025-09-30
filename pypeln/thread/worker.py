@@ -3,7 +3,7 @@ import time
 import typing as tp
 from dataclasses import dataclass, field
 
-import stopit
+import stopit2
 
 from pypeln import utils as pypeln_utils
 
@@ -135,7 +135,7 @@ class Worker(tp.Generic[T]):
         if not self.process.is_alive():
             return
 
-        stopit.async_raise(
+        stopit2.async_raise(
             self.process.ident,
             pypeln_utils.StopThreadException,
         )

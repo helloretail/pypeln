@@ -89,7 +89,7 @@ def filter(
         on_done: A function with signature `on_done(stage_status?)`. This function is executed once per worker when the worker finishes. `on_done` can accept additional arguments by name as described in [Advanced Usage](https://cgarciae.github.io/pypeln/advanced/#dependency-injection).
 
     !!! warning
-        To implement `timeout` we use `stopit.ThreadingTimeout` which has some limitations.
+        To implement `timeout` we use `stopit2.ThreadingTimeout` which has some limitations.
 
     Returns:
         Returns a `Stage` if the `stage` parameters is given, else it returns a `Partial`.

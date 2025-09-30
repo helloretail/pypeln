@@ -103,7 +103,7 @@ def each(
         run: Whether or not to execute the stage immediately.
 
     !!! warning
-        To implement `timeout` we use `stopit.ThreadingTimeout` which has some limitations.
+        To implement `timeout` we use `stopit2.ThreadingTimeout` which has some limitations.
 
     Returns:
         If the `stage` parameters is not given then this function returns a `Partial`, else if `run=False` (default) it return a new stage, if `run=True` then it runs the stage and returns `None`.

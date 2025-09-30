@@ -8,7 +8,7 @@ from copy import copy
 from dataclasses import dataclass, field
 from multiprocessing import synchronize
 
-import stopit
+import stopit2
 
 from pypeln import utils as pypeln_utils
 
@@ -139,7 +139,7 @@ class Worker(tp.Generic[T]):
         if isinstance(self.process, multiprocessing.Process):
             self.process.terminate()
         else:
-            stopit.async_raise(
+            stopit2.async_raise(
                 self.process.ident,
                 pypeln_utils.StopThreadException,
             )
