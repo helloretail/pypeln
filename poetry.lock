@@ -1425,10 +1425,14 @@ version = "1.1.2"
 description = "Timeout control decorator and context managers, raise any exception in another thread"
 optional = false
 python-versions = ">=3.9"
-files = [
-    {file = "stopit2-1.1.2-py3-none-any.whl", hash = "sha256:aad0349a76eed6e00deb18bd31ba663cb54939605f127b87a6d78655b89698a0"},
-    {file = "stopit2-1.1.2.tar.gz", hash = "sha256:cc3c737c549cae2083b96d5478954db671576113a01540703a4663339ebffc5f"},
-]
+files = []
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/helloretail/stopit2.git"
+reference = "c662a75cbd8f968cb4dac43653206cc66f6bed6c"
+resolved_reference = "c662a75cbd8f968cb4dac43653206cc66f6bed6c"
 
 [[package]]
 name = "termcolor"
@@ -1661,4 +1665,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<4.0"
-content-hash = "ca9132c3ebb895eb81a2c8b354ee359e873d54bf22237fcbe452e91ad570327c"
+content-hash = "dc14c896e8b5edb21dabfe2d6b41456647788634b9d5d4ecaf5a0e34fbb55d79"
